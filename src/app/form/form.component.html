@@ -1,0 +1,14 @@
+<div class="category-name"> {{ section.name }}</div>
+<form [formGroup]="sectionForm">
+  <div class="question-wrapper" *ngFor="let question of section.questions">
+    <div class="question">{{ question.text }}</div>
+    <div class="options">
+      <mat-button-toggle-group #group="matButtonToggleGroup">
+        <mat-button-toggle
+          *ngFor="let option of section.options"
+          value="{{option}}">{{ option }}</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+    <mat-divider></mat-divider>
+  </div>
+</form>
