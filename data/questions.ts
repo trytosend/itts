@@ -26,6 +26,7 @@ export class Data {
       options: ['Yes', 'No', 'N/A'],
       questions: [
         {text: 'Centrally managed indentity is applied (W3ID, SSO)'},
+        // tslint:disable-next-line:max-line-length
         {text: 'Multi-factor mechanism for any authentication over public network is implemented (CISCO AnyConnect Secure Mobility Client)'},
         {text: 'Multi-factor mechanism for any authentication of users with privilieged access rights'},
         {text: 'Protection of authentication system against brute-force log-on attempts is applied (lock-out procedure after a number of failed logon attempts within a certain time interval)'},

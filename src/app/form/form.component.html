@@ -1,0 +1,7 @@
+<div class="category-name"> {{ section.name }}</div>
+<mat-button-toggle-group #group="matButtonToggleGroup">
+  <mat-button-toggle
+    *ngFor="let option of section.options"
+    value="{{option}}">{{ option }}</mat-button-toggle>
+</mat-button-toggle-group>
+<div>{{group.value}}</div>
