@@ -6,7 +6,7 @@
   <ng-template matStepperIcon="done">
     <mat-icon>done_all</mat-icon>
   </ng-template>
-  <mat-step>
-    <app-form [section]="sections[0]"></app-form>
+  <mat-step *ngFor="let section of sections">
+    <app-form [section]="section"></app-form>
   </mat-step>
 </mat-horizontal-stepper>
